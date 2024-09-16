@@ -1,0 +1,494 @@
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a { text-decoration: none; }
+
+a,
+img,
+span,
+input,
+button,
+ion-icon { display: block; }
+
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+  font-family: var(--ff-josefin);
+  scroll-behavior: smooth;
+}
+
+
+
+
+.maingrid {
+  background-color: salmon;
+  padding: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 2;
+}
+.grids {
+  background-color: black;
+  margin: 10px;
+  padding: 10px;
+}
+.grids2 {
+  background-color: black;
+  margin: 10px;
+  padding: 10px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  padding: 10px;
+  font-family: "Poppin";
+  text-transform: capitalize;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header {
+  text-transform: uppercase;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Togglr responsivenes */
+
+
+/* Togglr responsivenes */
+@media  (max-width: 600px) {
+  .header{
+
+    display: block;
+    position: relative;
+    width: full;
+    height: 50px;
+    background-color: #cdc3c3;
+    margin: 0;
+    padding: 0;
+    
+
+  }
+  .header .nav{
+
+    display: block;
+    position: absolute;
+    width: 100%;
+
+
+  }
+  .header .nav{
+
+    display: block;
+    position: absolute;
+    width: 100%;
+
+
+  }
+  .header .nav ul{
+
+    display: block;
+    position: absolute;
+    width: 100%;
+
+
+  }
+  .hamburger{
+    cursor: pointer;
+    margin-top: 12px;
+  width: auto;
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
+  top:0;
+  display: block;
+  
+  }
+  .hamburger{
+    cursor: pointer;
+    margin-top: 12px;
+  width: auto;
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
+  top:0;
+  /* display: none; */
+  
+  }
+  .hamburger .line{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 2px;
+    margin: 10px;
+  color: black;
+  background: #000;
+  height: 1px;
+  width: 20px;
+  
+  }
+
+
+
+}
+
+
+
+
+
+.section-heading {
+  padding: 5px;
+  text-align: center;
+  padding-bottom: 10px;
+  color: black;
+  text-transform: uppercase;
+}
+.b-line {
+  display: block;
+  margin-top: 10px;
+  margin: auto;
+  background-color: blue;
+  height: 3px;
+  width: 40px;
+}
+.line {
+  background-color: rgb(51, 48, 48);
+  height: 1px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.nav ul {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav ul li {
+  cursor: pointer;
+  margin: 10px;
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding: 15px;
+  border-radius: 10px;
+}
+ul li:hover {
+  background-color: black;
+  color: white;
+}
+.hero {
+  background-color: #cdc3c3;
+  margin: 0;
+  display: flex;
+  width: 100%;
+}
+
+.textbox {
+  display: block;
+  width: 50%;
+  box-sizing: border-box;
+  margin: auto;
+  order: 2;
+}
+
+.hero h1,
+h2,
+h3 {
+  font-family: "Poppin";
+  padding: 10px;
+  margin-top: 2px;
+}
+.hero h1 {
+  color: black;
+  font-size: 2rem;
+}
+.hero h2 {
+  color: rgb(77, 77, 77);
+  font-size: 1rem;
+}
+.profile img {
+  height: 350px;
+  width: 200px;
+  padding: 10px;
+
+  margin-left: 60px;
+}
+.hero-btn {
+  padding: 12px;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  margin-left: 5px;
+  border-radius: 12px;
+border: teal;
+}
+
+/* project gallery style start*/
+#Projects .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#projects h2 {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.project {
+  display: block;
+  height: fit-content;
+  margin: auto;
+  padding: 10px;
+}
+.project img {
+  height: 280px;
+  width: auto;
+  justify-content: center;
+}
+
+/* project gallery style end*/
+
+/* services section css start */
+.services {
+  margin-top: 50px;
+  width: 100%;
+  background-color: aqua;
+  margin: 0;
+}
+.service-container {
+  margin-top: 30px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 2;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+.cardbody {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin: 10px;
+  width: 100%;
+}
+.maincard {
+  display: block;
+  width: 400px;
+  background-color: rgb(225, 200, 248);
+  margin: 10px;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.imgcard img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  cursor: pointer;
+}
+.textcard {
+  text-align: left;
+  margin-left: 10px;
+  text-transform: capitalize;
+  padding: 10px;
+}
+.completed {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  font-style: italic;
+  font-weight: 500;
+  color: rgb(70, 69, 69);
+  padding: 2px;
+}
+/* services section css end */
+/* conact form css start  */
+.formmain {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(208, 162, 250);
+  padding: 10px;
+}
+.formcontainer {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.inputbox {
+  display: block;
+
+  margin: 5px;
+  text-align: left;
+  font-size: 20px;
+}
+.inputbox input {
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+  font-size: 1rem;
+  text-transform: capitalize;
+  outline-style: none;
+}
+
+.message textarea {
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+  font-size: 1rem;
+  text-transform: capitalize;
+  outline-style: none;
+}
+.submit-btn{
+font-size: 20px;
+margin-left: 5px;
+margin-top: 10px;
+background-color: rgb(22, 128, 1);
+color: rgb(255, 255, 255);
+ padding: 10px 12px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+}
+.text {
+  width: 40%;
+}
+/* contact form css end here */
+
+/* footer csss */
+
+.footer-container {
+    margin: 0;
+  background-color: rgb(0, 134, 134);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+
+}
+.footerbox {
+    width: 33%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+.footerbox span {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 10px;
+  padding: 5px;
+}
+
+.footerbox ul {
+  display: flex;
+
+  flex-direction: column;
+  margin-left: 20px;
+  margin: auto;
+}
+.footerbox ul li {
+  cursor: pointer;
+  margin: 10px;
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding: 12px 20px;
+  border-radius: 10px;
+}
+.footer-profile img{
+margin: 5px;
+padding: 10px;
+height: 200px;
+border-radius: 50px;
+
+
+
+}
+.textabout span{
+
+    display: inline-flex;
+     padding:2px;
+     justify-content: space-between;
+text-align: left;
+
+}
+.textabout span p{
+    padding-left: 
+    2px;
+}
+
+.bottom {
+background-color: #cdc3c3;
+  text-transform: capitalize;
+  padding: 10px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.bottom ul {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+/*  Responsive styling */
